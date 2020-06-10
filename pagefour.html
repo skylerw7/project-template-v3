@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Lego</title>
+	<meta name="viewport" content="width=device-width">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	<!-- meyer-reset is a special css library that overrides all the ugle default css styles that come with html5 -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div id="blue">
+		    <img src="images/blue.png">
+		    
+		</div>
+		<div id="green">
+		    <img src="images/green.png">
+		    
+		</div>
+		<div id="red">
+		    <img src="images/red.png">
+		    
+		</div>
+		
+		<div id="yellow">
+		    <img src="images/yellow.png">
+		    
+		</div>
+		
+		<div id="orange">
+		    <img src="images/orange.png">
+		    
+		</div>
+		
+		<div id="blue2">
+		    <img src="images/blacksingle.png">
+		    
+		</div>
+		<div id="green2">
+		    <img src="images/bluelong.png">
+		    
+		</div>
+		<div id="red2">
+		    <img src="images/pinktri.png">
+		    
+		</div>
+		
+		<div id="yellow2">
+		    <img src="images/purpledouble.png">
+		    
+		</div>
+		
+		<div id="orange2">
+		    <img src="images/brownquad.png">
+		    
+		</div>
+		
+	<header>
+        <div class="grid">
+			<div class="logogrid">
+			<img src="images/1000px-LEGO_logo.svg.png">
+			</div>
+			<div class="navgrid">
+			<nav>
+		<!-- Global naviagtion stuff here, but move this or delete this to your liking. Same goes for the rest -->
+		<ul>
+			<li><a href="index.html">About</a></li>
+			<li><a href="pagetwo.html">Success</a></li>
+			<li><a href="pagethree.html">Learn</a></li>
+			<li><a href="pagefour.html">Play</a></li>
+		</ul>
+	</nav>
+	</div>
+	
+	<!-- header, h1, logo etc content -->
+		</div>
+	</header>
+
+	
+	<main>
+		
+	<!-- Main content here -->
+		
+		<div class="grid">
+			<div class="leftgrid">
+			  <h1>Endless Fun</h1>
+			    <p>There are billions of ways of assembling Legos together to create unique shapes, patterns or structures. Due to the 3d nature of the toy, it is possible to reach into the tens of billions of combinations when combining 10 Lego bricks. Click and drag some bricks here and just imagine all the possibilities!</p>
+
+			</div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+	</main>
+	<script>
+            blue.onmousedown = function(event) {
+
+  let shiftX = event.clientX - blue.getBoundingClientRect().left;
+  let shiftY = event.clientY - blue.getBoundingClientRect().top;
+
+  blue.style.position = 'absolute';
+  blue.style.zIndex = 1000;
+  document.body.append(blue);
+
+  moveAt(event.pageX, event.pageY);
+
+  // moves the ball at (pageX, pageY) coordinates
+  // taking initial shifts into account
+  function moveAt(pageX, pageY) {
+    blue.style.left = pageX - shiftX + 'px';
+    blue.style.top = pageY - shiftY + 'px';
+  }
+
+  function onMouseMove(event) {
+    moveAt(event.pageX, event.pageY);
+  }
+
+  // move the ball on mousemove
+  document.addEventListener('mousemove', onMouseMove);
+
+  // drop the ball, remove unneeded handlers
+  blue.onmouseup = function() {
+    document.removeEventListener('mousemove', onMouseMove);
+    blue.onmouseup = null;
+  };
+
+};
+
+blue.ondragstart = function() {
+  return false;
+};
+        </script>
+        
+        
+        <script>
+            green.onmousedown = function(event) {
+
+  let shiftX = event.clientX - green.getBoundingClientRect().left;
+  let shiftY = event.clientY - green.getBoundingClientRect().top;
+
+  green.style.position = 'absolute';
+  green.style.zIndex = 1000;
+  document.body.append(green);
+
+  moveAt(event.pageX, event.pageY);
+
+  // moves the ball at (pageX, pageY) coordinates
+  // taking initial shifts into account
+  function moveAt(pageX, pageY) {
+    green.style.left = pageX - shiftX + 'px';
+    green.style.top = pageY - shiftY + 'px';
+  }
+
+  function onMouseMove(event) {
+    moveAt(event.pageX, event.pageY);
+  }
+
+  // move the ball on mousemove
+  document.addEventListener('mousemove', onMouseMove);
+
+  // drop the ball, remove unneeded handlers
+  green.onmouseup = function() {
+    document.removeEventListener('mousemove', onMouseMove);
+    green.onmouseup = null;
+  };
+
+};
+
+green.ondragstart = function() {
+  return false;
+};
+        </script>
+        
+        <script>
+            red.onmousedown = function(event) {
+
+  let shiftX = event.clientX - red.getBoundingClientRect().left;
+  let shiftY = event.clientY - red.getBoundingClientRect().top;
+
+  red.style.position = 'absolute';
+  red.style.zIndex = 1000;
+  document.body.append(red);
+
+  moveAt(event.pageX, event.pageY);
+
+  // moves the ball at (pageX, pageY) coordinates
+  // taking initial shifts into account
+  function moveAt(pageX, pageY) {
+    red.style.left = pageX - shiftX + 'px';
+    red.style.top = pageY - shiftY + 'px';
+  }
+
+  function onMouseMove(event) {
+    moveAt(event.pageX, event.pageY);
+  }
+
+  // move the ball on mousemove
+  document.addEventListener('mousemove', onMouseMove);
+
+  // drop the ball, remove unneeded handlers
+  red.onmouseup = function() {
+    document.removeEventListener('mousemove', onMouseMove);
+    red.onmouseup = null;
+  };
+
+};
+
+red.ondragstart = function() {
+  return false;
+};
+        </script>
+        
+         <script>
+            yellow.onmousedown = function(event) {
+
+  let shiftX = event.clientX - yellow.getBoundingClientRect().left;
+  let shiftY = event.clientY - yellow.getBoundingClientRect().top;
+
+  yellow.style.position = 'absolute';
+  yellow.style.zIndex = 1000;
+  document.body.append(yellow);
+
+  moveAt(event.pageX, event.pageY);
+
+  // moves the ball at (pageX, pageY) coordinates
+  // taking initial shifts into account
+  function moveAt(pageX, pageY) {
+    yellow.style.left = pageX - shiftX + 'px';
+    yellow.style.top = pageY - shiftY + 'px';
+  }
+
+  function onMouseMove(event) {
+    moveAt(event.pageX, event.pageY);
+  }
+
+  // move the ball on mousemove
+  document.addEventListener('mousemove', onMouseMove);
+
+  // drop the ball, remove unneeded handlers
+  yellow.onmouseup = function() {
+    document.removeEventListener('mousemove', onMouseMove);
+    yellow.onmouseup = null;
+  };
+
+};
+
+yellow.ondragstart = function() {
+  return false;
+};
+        </script>
+        
+        <script>
+            orange.onmousedown = function(event) {
+
+  let shiftX = event.clientX - orange.getBoundingClientRect().left;
+  let shiftY = event.clientY - orange.getBoundingClientRect().top;
+
+  orange.style.position = 'absolute';
+  orange.style.zIndex = 1000;
+  document.body.append(orange);
+
+  moveAt(event.pageX, event.pageY);
+
+  // moves the ball at (pageX, pageY) coordinates
+  // taking initial shifts into account
+  function moveAt(pageX, pageY) {
+    orange.style.left = pageX - shiftX + 'px';
+    orange.style.top = pageY - shiftY + 'px';
+  }
+
+  function onMouseMove(event) {
+    moveAt(event.pageX, event.pageY);
+  }
+
+  // move the ball on mousemove
+  document.addEventListener('mousemove', onMouseMove);
+
+  // drop the ball, remove unneeded handlers
+  orange.onmouseup = function() {
+    document.removeEventListener('mousemove', onMouseMove);
+   orange.onmouseup = null;
+  };
+
+};
+
+orange.ondragstart = function() {
+  return false;
+};
+        </script>
+        
+        
+<!--        Second group of movables-->
+        
+         <script>
+            blue2.onmousedown = function(event) {
+
+  let shiftX = event.clientX - blue2.getBoundingClientRect().left;
+  let shiftY = event.clientY - blue2.getBoundingClientRect().top;
+
+  blue2.style.position = 'absolute';
+  blue2.style.zIndex = 1000;
+  document.body.append(blue2);
+
+  moveAt(event.pageX, event.pageY);
+
+  // moves the ball at (pageX, pageY) coordinates
+  // taking initial shifts into account
+  function moveAt(pageX, pageY) {
+    blue2.style.left = pageX - shiftX + 'px';
+    blue2.style.top = pageY - shiftY + 'px';
+  }
+
+  function onMouseMove(event) {
+    moveAt(event.pageX, event.pageY);
+  }
+
+  // move the ball on mousemove
+  document.addEventListener('mousemove', onMouseMove);
+
+  // drop the ball, remove unneeded handlers
+  blue2.onmouseup = function() {
+    document.removeEventListener('mousemove', onMouseMove);
+    blue2.onmouseup = null;
+  };
+
+};
+
+blue2.ondragstart = function() {
+  return false;
+};
+        </script>
+        
+        
+        <script>
+            green2.onmousedown = function(event) {
+
+  let shiftX = event.clientX - green2.getBoundingClientRect().left;
+  let shiftY = event.clientY - green2.getBoundingClientRect().top;
+
+  green2.style.position = 'absolute';
+  green2.style.zIndex = 1000;
+  document.body.append(green2);
+
+  moveAt(event.pageX, event.pageY);
+
+  // moves the ball at (pageX, pageY) coordinates
+  // taking initial shifts into account
+  function moveAt(pageX, pageY) {
+    green2.style.left = pageX - shiftX + 'px';
+    green2.style.top = pageY - shiftY + 'px';
+  }
+
+  function onMouseMove(event) {
+    moveAt(event.pageX, event.pageY);
+  }
+
+  // move the ball on mousemove
+  document.addEventListener('mousemove', onMouseMove);
+
+  // drop the ball, remove unneeded handlers
+  green2.onmouseup = function() {
+    document.removeEventListener('mousemove', onMouseMove);
+    green2.onmouseup = null;
+  };
+
+};
+
+green2.ondragstart = function() {
+  return false;
+};
+        </script>
+        
+        <script>
+            red2.onmousedown = function(event) {
+
+  let shiftX = event.clientX - red2.getBoundingClientRect().left;
+  let shiftY = event.clientY - red2.getBoundingClientRect().top;
+
+  red2.style.position = 'absolute';
+  red2.style.zIndex = 1000;
+  document.body.append(red2);
+
+  moveAt(event.pageX, event.pageY);
+
+  // moves the ball at (pageX, pageY) coordinates
+  // taking initial shifts into account
+  function moveAt(pageX, pageY) {
+    red2.style.left = pageX - shiftX + 'px';
+    red2.style.top = pageY - shiftY + 'px';
+  }
+
+  function onMouseMove(event) {
+    moveAt(event.pageX, event.pageY);
+  }
+
+  // move the ball on mousemove
+  document.addEventListener('mousemove', onMouseMove);
+
+  // drop the ball, remove unneeded handlers
+  red2.onmouseup = function() {
+    document.removeEventListener('mousemove', onMouseMove);
+    red2.onmouseup = null;
+  };
+
+};
+
+red2.ondragstart = function() {
+  return false;
+};
+        </script>
+        
+         <script>
+            yellow2.onmousedown = function(event) {
+
+  let shiftX = event.clientX - yellow2.getBoundingClientRect().left;
+  let shiftY = event.clientY - yellow2.getBoundingClientRect().top;
+
+  yellow2.style.position = 'absolute';
+  yellow2.style.zIndex = 1000;
+  document.body.append(yellow2);
+
+  moveAt(event.pageX, event.pageY);
+
+  // moves the ball at (pageX, pageY) coordinates
+  // taking initial shifts into account
+  function moveAt(pageX, pageY) {
+    yellow2.style.left = pageX - shiftX + 'px';
+    yellow2.style.top = pageY - shiftY + 'px';
+  }
+
+  function onMouseMove(event) {
+    moveAt(event.pageX, event.pageY);
+  }
+
+  // move the ball on mousemove
+  document.addEventListener('mousemove', onMouseMove);
+
+  // drop the ball, remove unneeded handlers
+  yellow2.onmouseup = function() {
+    document.removeEventListener('mousemove', onMouseMove);
+    yellow2.onmouseup = null;
+  };
+
+};
+
+yellow2.ondragstart = function() {
+  return false;
+};
+        </script>
+        
+        <script>
+            orange2.onmousedown = function(event) {
+
+  let shiftX = event.clientX - orange2.getBoundingClientRect().left;
+  let shiftY = event.clientY - orange2.getBoundingClientRect().top;
+
+  orange2.style.position = 'absolute';
+  orange2.style.zIndex = 1000;
+  document.body.append(orange2);
+
+  moveAt(event.pageX, event.pageY);
+
+  // moves the ball at (pageX, pageY) coordinates
+  // taking initial shifts into account
+  function moveAt(pageX, pageY) {
+    orange2.style.left = pageX - shiftX + 'px';
+    orange2.style.top = pageY - shiftY + 'px';
+  }
+
+  function onMouseMove(event) {
+    moveAt(event.pageX, event.pageY);
+  }
+
+  // move the ball on mousemove
+  document.addEventListener('mousemove', onMouseMove);
+
+  // drop the ball, remove unneeded handlers
+  orange2.onmouseup = function() {
+    document.removeEventListener('mousemove', onMouseMove);
+   orange2.onmouseup = null;
+  };
+
+};
+
+orange2.ondragstart = function() {
+  return false;
+};
+        </script>
+        
+        
+	<footer>
+	<img src="images/footer_lego.png">
+		<!-- footer content here -->
+
+	</footer>
+	<!-- link for jquery -->
+	<script
+  	src="https://code.jquery.com/jquery-3.4.1.min.js"
+  	integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  	crossorigin="anonymous"></script>
+  	<!-- link for your script file -->
+  	<script src="js/script.js"></script>
+</body>
+</html>

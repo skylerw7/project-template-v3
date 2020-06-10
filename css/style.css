@@ -1,16 +1,19 @@
 /* Enter your Styles below! */
 
-body { 
+body {
     font-family: Helvetica, sans-serif;
     font-size: 16px;
-     }
+}
 
-h1, h2, h3, h4 {
-    font-family: Helvetica, sans-serif;
+h1,
+h2,
+h3,
+h4 {
+    font-family: Helvetica bold, sans-serif;
 }
 
 h1 {
-    font-size: 48px;
+    font-size: 28px;
 }
 
 h2 {
@@ -20,6 +23,7 @@ h2 {
 h3 {
     font-size: 28px;
 }
+
 h4 {
     font-size: 24px;
 }
@@ -29,34 +33,233 @@ blockquote {
     font-family: Helvetica, sans-serif;
 }
 
-header {margin-bottom: 20px;}
+header {
+    margin-bottom: 50px;
+    height: 195px;
+    background-color: black;
+    width: 100vw;
+    position: fixed;
+}
 
 /* ensures that your images stretch the width of their containers */
-img { width: 100%; }
+nav {
+    position: absolute;
+    display: inline-block;
+    right: 150px;
+}
 
-a { 
+li {
+    float: left;
+    margin: 70px;
+}
+
+a {
     color: red;
     text-decoration: none;
-     }
-a:hover { color: black; }
+}
+
+a:hover {
+    color: black;
+}
 
 .grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 40px;
-    width: 60%;
+    grid-template-columns: 3fr 1fr 19fr 1fr 1fr 1fr;
+    grid-gap: 25px;
+    width: 80%;
     margin: auto;
+
+
+}
+
+.logogrid img {
+    height: 15vh;
 }
 
 .grid div {
-    background-color: #ccc;
+    /*    background-color: #ccc;*/
     padding: 20px;
 }
 
-@media only screen and (min-width:768px) {
-
+.legoimages {
+    margin-top: 170px;
+    margin-left: 200px;
+    border-color: black;
+    border-width: 20px;
+    border-style: solid;
 }
 
-@media only screen and (min-width:1224px) {
-
+.legoimages img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
 }
+
+.leftgrid {
+    height: 40vh;
+    width: 300px;
+    margin-top: 200px;
+    position: fixed;
+}
+
+/*
+.hometower {
+    background-image: url(../images/hometowerwnames.png);
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    top: 258px;
+    right: -830px;
+    background-repeat: no-repeat;
+}
+*/
+
+.hometower img {
+    position: absolute;
+    height: 80vh;
+    top: 180px;
+    right: 140px;
+}
+
+.stairstep img {
+    position: absolute;
+    width: 115%;
+    bottom: 30px;
+    left: 500px;
+    z-index: 1000;
+}
+
+footer {
+    bottom: 0px;
+    position: fixed;
+}
+
+footer img {
+    width: 100vw;
+}
+
+#blue {
+    width: 70px;
+    z-index: 1000;
+    position: absolute;
+    top: 250px;
+    left: 600px;
+}
+
+#blue img {
+    width: 100%;
+}
+
+#green {
+    width: 570px;
+    z-index: 1000;
+    position: absolute;
+    top: 750px;
+    left: 600px;
+}
+
+#green img {
+    width: 100%;
+}
+
+#red {
+    width: 220px;
+    z-index: 1000;
+    position: absolute;
+    top: 490px;
+    left: 600px;
+}
+
+#red img {
+    width: 100%;
+}
+
+#yellow {
+    width: 140px;
+    z-index: 1000;
+    position: absolute;
+    top: 370px;
+    left: 600px;
+}
+
+#yellow img {
+    width: 100%;
+}
+
+#orange {
+    width: 290px;
+    z-index: 1000;
+    position: absolute;
+    top: 620px;
+    left: 600px;
+}
+
+#orange img {
+    width: 100%;
+}
+
+
+
+#blue2 {
+    width: 70px;
+    z-index: 1000;
+    position: absolute;
+    top: 250px;
+    left: 600px;
+}
+
+#blue2 img {
+    width: 100%;
+}
+
+#green2 {
+    width: 570px;
+    z-index: 999;
+    position: absolute;
+    top: 750px;
+    left: 600px;
+}
+
+#green2 img {
+    width: 100%;
+}
+
+#red2 {
+    width: 220px;
+    z-index: 999;
+    position: absolute;
+    top: 490px;
+    left: 600px;
+}
+
+#red2 img {
+    width: 100%;
+}
+
+#yellow2 {
+    width: 140px;
+    z-index: 999;
+    position: absolute;
+    top: 370px;
+    left: 600px;
+}
+
+#yellow2 img {
+    width: 100%;
+}
+
+#orange2 {
+    width: 290px;
+    z-index: 999;
+    position: absolute;
+    top: 620px;
+    left: 600px;
+}
+
+#orange2 img {
+    width: 100%;
+}
+
+@media only screen and (min-width:768px) {}
+
+@media only screen and (min-width:1224px) {}
