@@ -1,18 +1,19 @@
 /* Enter your Styles below! */
 
 body {
-    font-family: Helvetica, sans-serif;
+    font-family: 'Anton', sans-serif;
     font-size: 16px;
 }
 
-h1,
+
 h2,
 h3,
 h4 {
     font-family: Helvetica bold, sans-serif;
 }
+p { font-family: Helvetica bold, sans-serif;}
 
-h1 {
+h1 {margin-bottom:15px;
     font-size: 28px;
 }
 
@@ -46,21 +47,23 @@ nav {
     position: absolute;
     display: inline-block;
     right: 150px;
+    font-size:35px;
 }
 
 li {
     float: left;
-    margin: 70px;
+    margin: 50px;
 }
 
 a {
-    color: red;
+    color:white;
     text-decoration: none;
 }
 
 a:hover {
-    color: black;
+    color: red;
 }
+
 
 .grid {
     display: grid;
@@ -84,6 +87,7 @@ a:hover {
 .legoimages {
     margin-top: 170px;
     margin-left: 200px;
+    margin-right:-200px;
     border-color: black;
     border-width: 20px;
     border-style: solid;
